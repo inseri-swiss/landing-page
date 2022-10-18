@@ -87,25 +87,25 @@
             <li>
               <a
                 class="page-scroll"
-                href="https://github.com/inseri-swiss/inseri"
+                href="https://github.com/inseri-swiss/inseri-core-wp"
                 target="_blank"
                 data-toggle="modal"
                 >Github</a
               >
             </li>
-            <li>
+            <!-- <li>
               <a class="page-scroll" href="#search" data-toggle="modal"
                 >Search</a
-              >
+              > -->
             </li>
-            <li>
+            <!-- <li>
               <a
                 class="page-scroll"
                 href="https://apps.inseri.swiss"
                 target="_blank"
                 >Log In</a
               >
-            </li>
+            </li> -->
             <li>
               <a class="page-scroll" href="#contact">Contact</a>
             </li>
@@ -128,26 +128,26 @@
               >i</span
             >cat<span class="i i:before">i</span>ons
           </div>
-          <a
+          <!-- <a
             href="#search"
             data-toggle="modal"
             class="page-scroll btn btn-xl"
             style="margin-top: 15px"
             ><i class="fa fa-search"></i
-          ></a>
+          ></a> -->
           <a
             href="#vision"
             class="page-scroll btn btn-xl"
             style="margin-top: 15px"
             >Our vision</a
           >
-          <a
+          <!-- <a
             href="https://applications.inseri.swiss"
             target="_blank"
             class="page-scroll btn btn-xl"
             style="margin-top: 15px"
             ><i class="fa fa-lock"></i
-          ></a>
+          ></a> -->
           <br />
         </div>
       </div>
@@ -156,6 +156,22 @@
     <!-- About Section -->
     <section id="ontologien">
       <div class="container">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Updates: inseri.swiss meets WordPress</h2>
+        </div>
+        <span
+          class="row col-lg-12 text-center text-muted"
+          style="margin-bottom: 100px"
+        >
+          The nie-ine codebase used in inseri.swiss is <b>discontinued</b>.
+          <br />
+          A new on-going development is integrating inseri.swiss vision into
+          WordPress using the WordPress plugin system - see
+          <a href="https://github.com/inseri-swiss/inseri-core-wp"
+            >inseri-core-wp</a
+          >.
+        </span>
+
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Project description</h2>
         </div>
@@ -689,88 +705,6 @@
     </section>
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Search -->
-    <div
-      class="portfolio-modal modal fade"
-      id="search"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div>
-            <!-- Project Details Go Here -->
-
-            <input
-              class="btn"
-              placeholder="Search Term"
-              id="myInput"
-              onkeyup="myFunction()"
-            />
-
-            <br /><br /><br />
-
-            <ul
-              id="myUL"
-              style="max-width: 500px; margin-left: auto; margin-right: auto"
-            ></ul>
-
-            <script>
-              function myFunction() {
-                var input, filter, ul, li, a, i, txtValue;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("myUL");
-                li = ul.getElementsByTagName("h4");
-                for (i = 0; i < li.length; i++) {
-                  a = li[i].getElementsByTagName("a")[0];
-                  txtValue = a.textContent || a.innerText;
-                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                  } else {
-                    li[i].style.display = "none";
-                  }
-                }
-              }
-            </script>
-
-            <script>
-              var xmlHttp = new XMLHttpRequest();
-              xmlHttp.open(
-                "GET",
-                "https://node.inseri.swiss/api/actions/featured",
-                false
-              ); // false for synchronous request
-              xmlHttp.send(null);
-
-              const cars = JSON.parse(xmlHttp.responseText).pages;
-
-              let text = "";
-              for (let i = cars.length - 1; i >= 0; i--) {
-                text +=
-                  "<h4><a href=' " +
-                  "https://apps.inseri.swiss/playground?page=" +
-                  cars[i].id +
-                  "' target='_blank' style='text-decoration: none!important' ><span style='cursor: pointer'>" +
-                  cars[i].title +
-                  "</span><br><br><span style='font-weight: normal!important; text-transform: none!important; color: grey!important; cursor: pointer;'>" +
-                  cars[i].description +
-                  "</span></a></h4><br><br>";
-              }
-
-              document.getElementById("myUL").innerHTML += text;
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Portfolio Modal 1 -->
     <div
