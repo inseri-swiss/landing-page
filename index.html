@@ -1,641 +1,1092 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>inseri.swiss</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <title>inseri.swiss</title>
+    <!-- Custom Fonts -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet" />
 
-  <!-- Custom Fonts -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script
+        src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
+        integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
+        integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo"
+        crossorigin="anonymous"
+      ></script>
+    <![endif]-->
+  </head>
 
-  <!-- Theme CSS -->
-  <link href="css/agency.min.css" rel="stylesheet">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
-  <![endif]-->
-
-</head>
-
-<body id="page-top" class="index">
-
-<!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-      </button>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="hidden">
-          <a href="#page-top"></a>
-        </li>
-                <li>
-          <a class="page-scroll" href="https://github.com/inseri-swiss/inseri" target="_blank" data-toggle="modal">Github</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#search" data-toggle="modal">Search</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="https://apps.inseri.swiss" target="_blank">Log In</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
-
-<!-- Header -->
-<header id="header">
-  <div class="container">
-    <div class="intro-text">
-      <div class="intro-lead-in">
-        <span class=" i i:before ">i</span>nser<span class=" i i:before ">i</span>.sw<span class=" i i:before ">i</span>ss -
-        web appl<span class=" i i:before ">i</span>cat<span class=" i i:before ">i</span>ons
-       </div>
-       <a href="#search" data-toggle="modal" class="page-scroll btn btn-xl" style="margin-top: 15px"><i class="fa fa-search"></i></a>
-      <a href="#vision" class="page-scroll btn btn-xl" style="margin-top: 15px">Our vision</a>
-      <a href="https://applications.inseri.swiss" target="_blank" class="page-scroll btn btn-xl" style="margin-top: 15px"><i class="fa fa-lock" ></i></a>
-      <br>
-      
-    </div>
-      
-  </div>
-</header>
-
-<!-- About Section -->
-    <section id="ontologien">
-        <div class="container">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Project description</h2>
-                </div>
-          <span class="row col-lg-12 text-center text-muted" style="margin-bottom: 100px;" >
-            “inseri.swiss” targets the large unsaturated demand for a service that enables the national and also the international academic research communities to publish scientific web applications online in an open, executable and citable way for the effortless re-use by any researcher. In addition, this project enables users to combine published software of various sorts alongside interfaces to global data repositories, which can all be performed using a web-based graphical user interface. <br> <br>
-
-The existing inseri technology has been developed by the University of Zurich, the University of Basel and the University of Bern. It was originally created for historical-critical editions as part of the NIE-INE project and provides the base functionality needed to build up such an online publishing environment for other scientific disciplines. In tandem with conventional publications (e.g., pdf files), a service based on inseri will simplify the publishing of and the open access to alternative types of online content. <br><br>
-
-When the Science IT unit of the University of Zurich began offering internal services using the inseri technology, a Swiss-wide demand quickly evolved. Here we propose to set up a national service “inseri.swiss” for the online publishing of scientific software in an open, executable and citable way. The proposed project includes the development of both a business plan and the necessary software extensions to run an inseri.swiss service sustainably. Furthermore, the project includes the creation of a production environment that allows the shared service to be operated and maintained in a reliable, future-proof way that scales based on demand.
-<br><br>
-inseri.swiss has the potential to provide an invaluable resource to researchers who would like to publish and re-use online research methods and it strives for becoming a sustainable, long-term national and international service.
-          </span>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Conferences and publications</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    
-                                    <h4 class="subheading">August 2021 <br> Nature Communications</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">inseri supported this publication by providing a front-end where users can try out the algorithm. You can find the publication <a href="https://doi.org/10.1038/s41467-021-25375-z" target="_blank">here</a></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    
-                                    <h4 class="subheading">July 2021 <br> Harvard University </h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">This article is about inseri as a potential IT framework for research projects in the Humanities. You can find the publication <a href="https://classics-at.chs.harvard.edu/classics18-serbaeva-cools-stoffregen-padlina/" target="_blank">here</a></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    
-                                    <h4 class="subheading">November 2020 <br> Swiss Scolarly Edition Infrastructure Conference </h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted"> 22 YouTube Videos where inseri is being presented in detail. You can find the videos <a href="https://www.youtube.com/playlist?list=PLkCga6LPxdgrZwu0xBxsZEJauJ8_pq8ru" target="_blank">here</a></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    
-                                    <h4 class="subheading">October 2020 <br> Open Access In Action </h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">A Swissuniversities Conference where the Open Access Call was launched for the next funding cycle of Swissuniversities.</p>
-                                </div>
-                            </div>
-                        </li>
-                                                <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/5.jpeg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    
-                                    <h4 class="subheading">September 2020 <br> Virtual research environments and ancient manuscripts </h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted"> A conference from the University of Lausanne where inseri was presented. You can find the list of presentations <a href="https://claireclivaz.hypotheses.org/930" target="_blank">here</a></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/6.jpeg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    
-                                    <h4 class="subheading">April 2020 <br> Digitisation of newspapers collections  </h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">A Conference from the University of Luxembourg, where inseri was presented. You can find the lineup  <a href="https://impresso.github.io/eldorado/online-program/" target="_blank">here</a></p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav
+      id="mainNav"
+      class="navbar navbar-default navbar-custom navbar-fixed-top"
+    >
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span> Menu
+            <i class="fa fa-bars"></i>
+          </button>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a
+                class="page-scroll"
+                href="https://github.com/inseri-swiss/inseri"
+                target="_blank"
+                data-toggle="modal"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a class="page-scroll" href="#search" data-toggle="modal"
+                >Search</a
+              >
+            </li>
+            <li>
+              <a
+                class="page-scroll"
+                href="https://apps.inseri.swiss"
+                target="_blank"
+                >Log In</a
+              >
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">
+            <span class="i i:before">i</span>nser<span class="i i:before"
+              >i</span
+            >.sw<span class="i i:before">i</span>ss - web appl<span
+              class="i i:before"
+              >i</span
+            >cat<span class="i i:before">i</span>ons
+          </div>
+          <a
+            href="#search"
+            data-toggle="modal"
+            class="page-scroll btn btn-xl"
+            style="margin-top: 15px"
+            ><i class="fa fa-search"></i
+          ></a>
+          <a
+            href="#vision"
+            class="page-scroll btn btn-xl"
+            style="margin-top: 15px"
+            >Our vision</a
+          >
+          <a
+            href="https://applications.inseri.swiss"
+            target="_blank"
+            class="page-scroll btn btn-xl"
+            style="margin-top: 15px"
+            ><i class="fa fa-lock"></i
+          ></a>
+          <br />
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="ontologien">
+      <div class="container">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Project description</h2>
+        </div>
+        <span
+          class="row col-lg-12 text-center text-muted"
+          style="margin-bottom: 100px"
+        >
+          “inseri.swiss” targets the large unsaturated demand for a service that
+          enables the national and also the international academic research
+          communities to publish scientific web applications online in an open,
+          executable and citable way for the effortless re-use by any
+          researcher. In addition, this project enables users to combine
+          published software of various sorts alongside interfaces to global
+          data repositories, which can all be performed using a web-based
+          graphical user interface. <br />
+          <br />
+
+          The existing inseri technology has been developed by the University of
+          Zurich, the University of Basel and the University of Bern. It was
+          originally created for historical-critical editions as part of the
+          NIE-INE project and provides the base functionality needed to build up
+          such an online publishing environment for other scientific
+          disciplines. In tandem with conventional publications (e.g., pdf
+          files), a service based on inseri will simplify the publishing of and
+          the open access to alternative types of online content. <br /><br />
+
+          When the Science IT unit of the University of Zurich began offering
+          internal services using the inseri technology, a Swiss-wide demand
+          quickly evolved. Here we propose to set up a national service
+          “inseri.swiss” for the online publishing of scientific software in an
+          open, executable and citable way. The proposed project includes the
+          development of both a business plan and the necessary software
+          extensions to run an inseri.swiss service sustainably. Furthermore,
+          the project includes the creation of a production environment that
+          allows the shared service to be operated and maintained in a reliable,
+          future-proof way that scales based on demand.
+          <br /><br />
+          inseri.swiss has the potential to provide an invaluable resource to
+          researchers who would like to publish and re-use online research
+          methods and it strives for becoming a sustainable, long-term national
+          and international service.
+        </span>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Conferences and publications</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img
+                    class="img-circle img-responsive"
+                    src="img/about/1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">
+                      August 2021 <br />
+                      Nature Communications
+                    </h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      inseri supported this publication by providing a front-end
+                      where users can try out the algorithm. You can find the
+                      publication
+                      <a
+                        href="https://doi.org/10.1038/s41467-021-25375-z"
+                        target="_blank"
+                        >here</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img
+                    class="img-circle img-responsive"
+                    src="img/about/2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">
+                      July 2021 <br />
+                      Harvard University
+                    </h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      This article is about inseri as a potential IT framework
+                      for research projects in the Humanities. You can find the
+                      publication
+                      <a
+                        href="https://classics-at.chs.harvard.edu/classics18-serbaeva-cools-stoffregen-padlina/"
+                        target="_blank"
+                        >here</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img
+                    class="img-circle img-responsive"
+                    src="img/about/3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">
+                      November 2020 <br />
+                      Swiss Scolarly Edition Infrastructure Conference
+                    </h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      22 YouTube Videos where inseri is being presented in
+                      detail. You can find the videos
+                      <a
+                        href="https://www.youtube.com/playlist?list=PLkCga6LPxdgrZwu0xBxsZEJauJ8_pq8ru"
+                        target="_blank"
+                        >here</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img
+                    class="img-circle img-responsive"
+                    src="img/about/4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">
+                      October 2020 <br />
+                      Open Access In Action
+                    </h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      A Swissuniversities Conference where the Open Access Call
+                      was launched for the next funding cycle of
+                      Swissuniversities.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img
+                    class="img-circle img-responsive"
+                    src="img/about/5.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">
+                      September 2020 <br />
+                      Virtual research environments and ancient manuscripts
+                    </h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      A conference from the University of Lausanne where inseri
+                      was presented. You can find the list of presentations
+                      <a
+                        href="https://claireclivaz.hypotheses.org/930"
+                        target="_blank"
+                        >here</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img
+                    class="img-circle img-responsive"
+                    src="img/about/6.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">
+                      April 2020 <br />
+                      Digitisation of newspapers collections
+                    </h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      A Conference from the University of Luxembourg, where
+                      inseri was presented. You can find the lineup
+                      <a
+                        href="https://impresso.github.io/eldorado/online-program/"
+                        target="_blank"
+                        >here</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-<!-- Portfolio Grid Section -->
-<section id="vision" class="bg-light-gray">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">inseri vision</h2>
-        <h3 class="section-subheading text-muted">inseri connects data providers, web components, local user data and microservices,
-          so that a user can combine them in any possible way. <br> It serves as an online collaborative work and publishing environment.</h3>
-        <a   >
-          <img src="img/vision.png" class="img-responsive img-centered" alt="" style="width: 60%;"  onclick="img_box(this)">
-        </a>
-        <a href="#header" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8593;</a>
-        <a href="#webComponents" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8595;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio Grid Section -->
-<section id="webComponents" class="bg-light-gray">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">web components</h2>
-        <h3 class="section-subheading text-muted">inseri can integrate any own or third party web component as an inseri app. <br>
-          Any inseri app can be used with own user data, existing data providers and microservices</h3>
-        <a data-toggle="modal" >
-          <img src="img/gifs/wbeComponents.png" class="img-responsive img-centered" alt="" style="width: 60%;" onclick="img_box(this)">
-        </a> <br>
-        <a href="#vision" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8593;</a>
-        <a href="#portfolioModal1" data-toggle="modal" class="page-scroll btn btn-xl" style="margin-top: 10px">More</a>
-        <a href="#dataProviders" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8595;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="dataProviders" class="bg-light-gray">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Data Providers</h2>
-        <h3 class="section-subheading text-muted">Import millions of books and other data with two clicks from thousands of institutions <br>
-          and read, analyse and comment on them, collaboratively</h3>
-        <a   data-toggle="modal">
-          <img src="img/gifs/dataProviders.png" class="img-responsive img-centered" alt="" style="width: 60%;" onclick="img_box(this)">
-        </a>
-        <a href="#webComponents" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8593;</a>
-        <a href="#portfolioModal2" data-toggle="modal" class="page-scroll btn btn-xl" style="margin-top: 10px">More</a>
-        <a href="#ownData" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8595;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="ownData" class="bg-light-gray">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Cloud Storage</h2>
-        <h3 class="section-subheading text-muted">Users can upload own data and visualise, change, read, update and delete them.
-        </h3>
-        <a  data-toggle="modal">
-          <img src="img/gifs/ownData.png" class="img-responsive img-centered" alt="" style="width: 60%;" onclick="img_box(this)">
-        </a>
-        <a href="#dataProviders" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8593;</a>
-        <a href="#portfolioModal3" data-toggle="modal" class="page-scroll btn btn-xl" style="margin-top: 10px">More</a>
-        <a href="#microservices" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8595;</a>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="microservices" class="bg-light-gray">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Microservices</h2>
-        <h3 class="section-subheading text-muted">Users can upload own code and use data <br>
-          from the data providers or own data to analyse it.
-        </h3>
-        <a  data-toggle="modal">
-          <img src="img/gifs/microservice.png" class="img-responsive img-centered" alt="" style="width: 60%;" onclick="img_box(this)">
-        </a>
-        <a href="#ownData" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8593;</a>
-        <a href="#portfolioModal4" data-toggle="modal" class="page-scroll btn btn-xl" style="margin-top: 10px">More</a>
-        <a href="#contact" class="page-scroll btn btn-xl" style="margin-top: 10px">&#8595;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Clients Aside -->
-<aside class="clients">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="img/swissuniversities.jpg" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="img/s3it.jpg" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="img/uzh.png" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="img/ubasel.jpg" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="img/zb.png" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="img/ubern.png" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="img/enhancer.png" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="img/piaget.png" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-    </div>
-  </div>
-</aside>
-
-<!-- Contact Section -->
-<section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Contact Us</h2>
-        <a href="mailto:inseri-contact@s3it.lists.uzh.ch" class="page-scroll btn btn-xl">Click here to contact us</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Portfolio Modals -->
-<!-- Use the modals below to showcase details about your portfolio projects! -->
-
-<!-- Search -->
-<div class="portfolio-modal modal fade" id="search" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
+    <!-- Portfolio Grid Section -->
+    <section id="vision" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">inseri vision</h2>
+            <h3 class="section-subheading text-muted">
+              inseri connects data providers, web components, local user data
+              and microservices, so that a user can combine them in any possible
+              way. <br />
+              It serves as an online collaborative work and publishing
+              environment.
+            </h3>
+            <a>
+              <img
+                src="img/vision.png"
+                class="img-responsive img-centered"
+                alt=""
+                style="width: 60%"
+                onclick="img_box(this)"
+              />
+            </a>
+            <a
+              href="#header"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8593;</a
+            >
+            <a
+              href="#webComponents"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8595;</a
+            >
           </div>
         </div>
       </div>
-      <div >
-        <!-- Project Details Go Here -->
+    </section>
 
-        <input class=" btn " placeholder="Search Term" id="myInput" onkeyup="myFunction()">
+    <!-- Portfolio Grid Section -->
+    <section id="webComponents" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">web components</h2>
+            <h3 class="section-subheading text-muted">
+              inseri can integrate any own or third party web component as an
+              inseri app. <br />
+              Any inseri app can be used with own user data, existing data
+              providers and microservices
+            </h3>
+            <a data-toggle="modal">
+              <img
+                src="img/gifs/wbeComponents.png"
+                class="img-responsive img-centered"
+                alt=""
+                style="width: 60%"
+                onclick="img_box(this)"
+              />
+            </a>
+            <br />
+            <a
+              href="#vision"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8593;</a
+            >
+            <a
+              href="#portfolioModal1"
+              data-toggle="modal"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >More</a
+            >
+            <a
+              href="#dataProviders"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8595;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <br><br><br>
+    <section id="dataProviders" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Data Providers</h2>
+            <h3 class="section-subheading text-muted">
+              Import millions of books and other data with two clicks from
+              thousands of institutions <br />
+              and read, analyse and comment on them, collaboratively
+            </h3>
+            <a data-toggle="modal">
+              <img
+                src="img/gifs/dataProviders.png"
+                class="img-responsive img-centered"
+                alt=""
+                style="width: 60%"
+                onclick="img_box(this)"
+              />
+            </a>
+            <a
+              href="#webComponents"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8593;</a
+            >
+            <a
+              href="#portfolioModal2"
+              data-toggle="modal"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >More</a
+            >
+            <a
+              href="#ownData"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8595;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-<ul id="myUL" style="max-width: 500px; margin-left: auto; margin-right: auto;">
-</ul>
+    <section id="ownData" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Cloud Storage</h2>
+            <h3 class="section-subheading text-muted">
+              Users can upload own data and visualise, change, read, update and
+              delete them.
+            </h3>
+            <a data-toggle="modal">
+              <img
+                src="img/gifs/ownData.png"
+                class="img-responsive img-centered"
+                alt=""
+                style="width: 60%"
+                onclick="img_box(this)"
+              />
+            </a>
+            <a
+              href="#dataProviders"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8593;</a
+            >
+            <a
+              href="#portfolioModal3"
+              data-toggle="modal"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >More</a
+            >
+            <a
+              href="#microservices"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8595;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("h4");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
+    <section id="microservices" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Microservices</h2>
+            <h3 class="section-subheading text-muted">
+              Users can upload own code and use data <br />
+              from the data providers or own data to analyse it.
+            </h3>
+            <a data-toggle="modal">
+              <img
+                src="img/gifs/microservice.png"
+                class="img-responsive img-centered"
+                alt=""
+                style="width: 60%"
+                onclick="img_box(this)"
+              />
+            </a>
+            <a
+              href="#ownData"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8593;</a
+            >
+            <a
+              href="#portfolioModal4"
+              data-toggle="modal"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >More</a
+            >
+            <a
+              href="#contact"
+              class="page-scroll btn btn-xl"
+              style="margin-top: 10px"
+              >&#8595;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img
+                src="img/swissuniversities.jpg"
+                class="img-responsive img-centered"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img
+                src="img/s3it.jpg"
+                class="img-responsive img-centered"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img
+                src="img/uzh.png"
+                class="img-responsive img-centered"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img
+                src="img/ubasel.jpg"
+                class="img-responsive img-centered"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img
+                src="img/zb.png"
+                class="img-responsive img-centered"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img
+                src="img/ubern.png"
+                class="img-responsive img-centered"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img
+                src="img/enhancer.png"
+                class="img-responsive img-centered"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img
+                src="img/piaget.png"
+                class="img-responsive img-centered"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Contact Us</h2>
+            <a
+              href="mailto:inseri-contact@s3it.lists.uzh.ch"
+              class="page-scroll btn btn-xl"
+              >Click here to contact us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Search -->
+    <div
+      class="portfolio-modal modal fade"
+      id="search"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div>
+            <!-- Project Details Go Here -->
+
+            <input
+              class="btn"
+              placeholder="Search Term"
+              id="myInput"
+              onkeyup="myFunction()"
+            />
+
+            <br /><br /><br />
+
+            <ul
+              id="myUL"
+              style="max-width: 500px; margin-left: auto; margin-right: auto"
+            ></ul>
 
             <script>
-
-            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open( "GET", "https://node.inseri.swiss/api/actions/featured", false ); // false for synchronous request
-            xmlHttp.send( null );
-
-            const cars = JSON.parse( xmlHttp.responseText ).pages;
-
-            let text = "";
-            for (let i = cars.length - 1; i >= 0; i--) {
-              text += "<h4><a href=' " + "https://apps.inseri.swiss/playground?page=" + cars[i].id + "' target='_blank' style='text-decoration: none!important' ><span style='cursor: pointer'>" +  cars[i].title + "</span><br><br><span style='font-weight: normal!important; text-transform: none!important; color: grey!important; cursor: pointer;'>"
-              + cars[i].description + "</span></a></h4><br><br>" ;
-            }
-
-            document.getElementById("myUL").innerHTML += text;
+              function myFunction() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("h4");
+                for (i = 0; i < li.length; i++) {
+                  a = li[i].getElementsByTagName("a")[0];
+                  txtValue = a.textContent || a.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                  } else {
+                    li[i].style.display = "none";
+                  }
+                }
+              }
             </script>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Portfolio Modal 1 -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Web components</h3>
-              <p class="item-intro text-muted">Web components and the inseri vision</p>
-              <img class="img-responsive img-centered" src="img/background_image_webapps.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>App impressions</h3>
-              <p class="item-intro text-muted">This video shows some example visualisation and editing apps</p>
-              <img class="img-responsive img-centered" src="img/gifs/webComponent.gif" alt="">
-            </div>
+            <script>
+              var xmlHttp = new XMLHttpRequest();
+              xmlHttp.open(
+                "GET",
+                "https://node.inseri.swiss/api/actions/featured",
+                false
+              ); // false for synchronous request
+              xmlHttp.send(null);
+
+              const cars = JSON.parse(xmlHttp.responseText).pages;
+
+              let text = "";
+              for (let i = cars.length - 1; i >= 0; i--) {
+                text +=
+                  "<h4><a href=' " +
+                  "https://apps.inseri.swiss/playground?page=" +
+                  cars[i].id +
+                  "' target='_blank' style='text-decoration: none!important' ><span style='cursor: pointer'>" +
+                  cars[i].title +
+                  "</span><br><br><span style='font-weight: normal!important; text-transform: none!important; color: grey!important; cursor: pointer;'>" +
+                  cars[i].description +
+                  "</span></a></h4><br><br>";
+              }
+
+              document.getElementById("myUL").innerHTML += text;
+            </script>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Portfolio Modal 2 -->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Data providers</h3>
-              <p class="item-intro text-muted">Data providers and the inseri vision</p>
-              <img class="img-responsive img-centered" src="img/institutions_vision.png" alt="">
+    <!-- Portfolio Modal 1 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Template impression</h3>
-              <p class="item-intro text-muted">This video shows how an institution is chosen and a book is imported</p>
-              <img class="img-responsive img-centered" src="img/gifs/dataProviders.gif" alt="">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Web components</h3>
+                  <p class="item-intro text-muted">
+                    Web components and the inseri vision
+                  </p>
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/background_image_webapps.png"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Comments and templates</h3>
-              <p class="item-intro text-muted">Thanks for the Basel University Library that had the idea for this functionality!!! <br>
-                And just one more information, templates can be created without programming knowledge directly in inseri as well.</p>
-              <iframe width="800" height="450" src="https://www.youtube.com/embed/2SY3357fIZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>inseri and Knora / Gravsearch</h3>
-              <p class="item-intro text-muted">This video is a little bit outdated, but it shows that inseri works with Knora and Gravsearch. <br>
-              You can create templates now for users that don't know Gravsearch and want to import a book or other data from Knora</p>
-              <iframe width="800" height="450" src="https://www.youtube.com/embed/rkv9_julOxo?start=123" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>App impressions</h3>
+                  <p class="item-intro text-muted">
+                    This video shows some example visualisation and editing apps
+                  </p>
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/gifs/webComponent.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Portfolio Modal 3 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Cloud Storage </h3>
-              <p class="item-intro text-muted">Cloud storage and the inseri vision</p>
-              <img class="img-responsive img-centered" src="img/cloudStorage.png" alt="">
+    <!-- Portfolio Modal 2 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Cloud Storage impression</h3>
-              <p class="item-intro text-muted">This video shows how an uploaded image is opened with the simple image app</p>
-              <img class="img-responsive img-centered" src="img/cloudStorage.gif" alt="">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Data providers</h3>
+                  <p class="item-intro text-muted">
+                    Data providers and the inseri vision
+                  </p>
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/institutions_vision.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Template impression</h3>
+                  <p class="item-intro text-muted">
+                    This video shows how an institution is chosen and a book is
+                    imported
+                  </p>
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/gifs/dataProviders.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Comments and templates</h3>
+                  <p class="item-intro text-muted">
+                    Thanks for the Basel University Library that had the idea
+                    for this functionality!!! <br />
+                    And just one more information, templates can be created
+                    without programming knowledge directly in inseri as well.
+                  </p>
+                  <iframe
+                    width="800"
+                    height="450"
+                    src="https://www.youtube.com/embed/2SY3357fIZM"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>inseri and Knora / Gravsearch</h3>
+                  <p class="item-intro text-muted">
+                    This video is a little bit outdated, but it shows that
+                    inseri works with Knora and Gravsearch. <br />
+                    You can create templates now for users that don't know
+                    Gravsearch and want to import a book or other data from
+                    Knora
+                  </p>
+                  <iframe
+                    width="800"
+                    height="450"
+                    src="https://www.youtube.com/embed/rkv9_julOxo?start=123"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Portfolio Modal 4 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Microservices</h3>
-              <p class="item-intro text-muted">Microservices and the inseri vision</p>
-              <img class="img-responsive img-centered" src="img/microserivces.png" alt="">
+    <!-- Portfolio Modal 3 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Microservice impression</h3>
-              <p class="item-intro text-muted">Microservices and the inseri vision</p>
-              <img class="img-responsive img-centered" src="img/gifs/microservice.gif" alt="">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Cloud Storage</h3>
+                  <p class="item-intro text-muted">
+                    Cloud storage and the inseri vision
+                  </p>
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/cloudStorage.png"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h3>Microservice example</h3>
-              <p class="item-intro text-muted">This video shows what a microservice is</p>
-              <iframe width="800" height="450" src="https://www.youtube.com/embed/rjerRKRY2EY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Cloud Storage impression</h3>
+                  <p class="item-intro text-muted">
+                    This video shows how an uploaded image is opened with the
+                    simple image app
+                  </p>
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/cloudStorage.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- jQuery -->
-<script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Portfolio Modal 4 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Microservices</h3>
+                  <p class="item-intro text-muted">
+                    Microservices and the inseri vision
+                  </p>
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/microserivces.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Microservice impression</h3>
+                  <p class="item-intro text-muted">
+                    Microservices and the inseri vision
+                  </p>
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/gifs/microservice.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Microservice example</h3>
+                  <p class="item-intro text-muted">
+                    This video shows what a microservice is
+                  </p>
+                  <iframe
+                    width="800"
+                    height="450"
+                    src="https://www.youtube.com/embed/rjerRKRY2EY"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-<!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
+    <!-- Plugin JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
+      integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- Theme JavaScript -->
-<script src="js/agency.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-<!-- Light Box JavaScript -->
-<script src="js/img_box.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
 
-</body>
-
+    <!-- Light Box JavaScript -->
+    <script src="js/img_box.js"></script>
+  </body>
 </html>
 
 <style>
